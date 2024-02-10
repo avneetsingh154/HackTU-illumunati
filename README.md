@@ -6,4 +6,4 @@ The presentation provides a comprehensive overview of the entire process and is 
 
 ## Description
 
-This section provides a brief overview of the project. It includes the purpose of the project, its scope, and its intended audience.
+Problem Statement: Develop an AI-powered education platform that promotes the fundamental right to equality by providing inclusive learning opportunities for individuals with disabilities. The platform will leverage voice control and sign language recognition features, ensuring accessible education for all, regardless of physical or sensory challenges.
