@@ -1,0 +1,472 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: user asks about Bhuvan Portal
+    steps:
+      - intent: provide_url_bhuvan
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Housing for All
+    steps:
+      - intent: provide_url_housing
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan Forum
+    steps:
+      - intent: provide_url_forum
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan Aadhar
+    steps:
+      - intent: provide_url_aadhaar
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan apshcl
+    steps:
+      - intent: provide_url_apshcl
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan ntr
+    steps:
+      - intent: provide_url_ntr
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan forum
+    steps:
+      - intent: provide_url_forum
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan geonetwork
+    steps:
+      - intent: provide_url_geonetwork
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan planner
+    steps:
+      - intent: provide_url_planner
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan globe
+    steps:
+      - intent: provide_url_globe
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan mhrd rusa
+    steps:
+      - intent: provide_url_mhrd_rusa
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan geographicalindication
+    steps:
+      - intent: provide_url_geographicalindication
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan flycatchers
+    steps:
+      - intent: provide_url_flycatchers
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan mhrd ncert
+    steps:
+      - intent: provide_url_mhrd_ncert
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user talks about Bhuvan nabard
+    steps:
+      - intent: provide_url_nabard
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user talks about Bhuvan iwmp
+    steps:
+      - intent: provide_url_iwmp
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan Data
+    steps:
+      - intent: provide_url_data
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland1
+    steps:
+      - intent: landuselandcover
+      - action: utter_land_scale
+      - action: action_speak
+      - intent: scale
+      - action: utter_land_50000
+      - action: action_speak
+      - intent: time1
+      - action: utter_land_56
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland2
+    steps:
+      - intent: landuselandcover
+      - action: utter_land_scale
+      - action: action_speak
+      - intent: scale
+      - action: utter_land_50000
+      - action: action_speak
+      - intent: time2
+      - action: utter_land_56
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland3
+    steps:
+      - intent: landuselandcover
+      - action: utter_land_scale
+      - action: action_speak
+      - intent: scale
+      - action: utter_land_50000
+      - action: action_speak
+      - intent: time3
+      - action: utter_land_56
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland4
+    steps:
+      - intent: landuselandcover
+      - action: utter_land_scale
+      - action: action_speak
+      - intent: scale_2
+      - action: utter_land_250k
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematiclanddates56
+    steps:
+      - intent: landuselandcover56
+      - action: utter_land_56
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematiclanddates1112
+    steps:
+      - intent: landuselandcover1112
+      - action: utter_land_1112
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematiclanddates1516
+    steps:
+      - intent: landuselandcover1516
+      - action: utter_land_1516
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland250k
+    steps:
+      - intent: landuselandcover250k
+      - action: utter_land_250k
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicgeo
+    steps:
+      - intent: geomorphology
+      - action: utter_geomorphology
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland_visual
+    steps:
+      - intent: landuselandcover_visualisation
+      - action: utter_land_visualization
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicfloods
+    steps:
+      - intent: flood
+      - action: utter_hazards
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicwasteland
+    steps:
+      - intent: land_wasteland
+      - action: utter_wasteland
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland_waterbodies
+    steps:
+      - intent: Waterbodies
+      - action: utter_waterbodies
+      - action: action_speak
+
+  - story: User triggers web automation
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: perform_web_automation
+      - action: action_perform_web_automation
+
+  - story: happy path1
+    steps:
+      - intent: greet1
+      - action: utter_greet1
+      - intent: mood_great1
+      - action: utter_happy1
+
+  - story: sad path 11
+    steps:
+      - intent: greet1
+      - action: utter_greet1
+      - intent: mood_unhappy1
+      - action: utter_cheer_up1
+      - action: utter_did_that_help1
+      - intent: affirm1
+      - action: utter_happy1
+
+  - story: sad path 21
+    steps:
+      - intent: greet1
+      - action: utter_greet1
+      - intent: mood_unhappy1
+      - action: utter_cheer_up1
+      - action: utter_did_that_help1
+      - intent: deny1
+      - action: utter_goodbye1
+
+  - story: user asks about Bhuvan Portal1
+    steps:
+      - intent: provide_url_bhuvan1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Housing for All1
+    steps:
+      - intent: provide_url_housing1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan Forum1
+    steps:
+      - intent: provide_url_forum1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan Aadhar1
+    steps:
+      - intent: provide_url_aadhaar1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan apshcl1
+    steps:
+      - intent: provide_url_apshcl1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan ntr1
+    steps:
+      - intent: provide_url_ntr1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan forum1
+    steps:
+      - intent: provide_url_forum1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan geonetwork1
+    steps:
+      - intent: provide_url_geonetwork1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan planner1
+    steps:
+      - intent: provide_url_planner1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan globe1
+    steps:
+      - intent: provide_url_globe1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan mhrd rusa1
+    steps:
+      - intent: provide_url_mhrd_rusa1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan geographicalindication1
+    steps:
+      - intent: provide_url_geographicalindication1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan flycatchers1
+    steps:
+      - intent: provide_url_flycatchers1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan mhrd ncert1
+    steps:
+      - intent: provide_url_mhrd_ncert1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user talks about Bhuvan nabard1
+    steps:
+      - intent: provide_url_nabard1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user talks about Bhuvan iwmp1
+    steps:
+      - intent: provide_url_iwmp1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan Data1
+    steps:
+      - intent: provide_url_data1
+      - action: action_provide_info
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland11
+    steps:
+      - intent: landuselandcover1
+      - action: utter_land_scale1
+      - action: action_speak
+      - intent: scale1
+      - action: utter_land_500001
+      - action: action_speak
+      - intent: time11
+      - action: utter_land_561
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland21
+    steps:
+      - intent: landuselandcover1
+      - action: utter_land_scale1
+      - action: action_speak
+      - intent: scale1
+      - action: utter_land_500001
+      - action: action_speak
+      - intent: time21
+      - action: utter_land_561
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland31
+    steps:
+      - intent: landuselandcover1
+      - action: utter_land_scale1
+      - action: action_speak
+      - intent: scale1
+      - action: utter_land_500001
+      - action: action_speak
+      - intent: time31
+      - action: utter_land_561
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland41
+    steps:
+      - intent: landuselandcover1
+      - action: utter_land_scale1
+      - action: action_speak
+      - intent: scale_21
+      - action: utter_land_250k1
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematiclanddates561
+    steps:
+      - intent: landuselandcover561
+      - action: utter_land_561
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematiclanddates11121
+    steps:
+      - intent: landuselandcover11121
+      - action: utter_land_11121
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematiclanddates15161
+    steps:
+      - intent: landuselandcover15161
+      - action: utter_land_15161
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland250k1
+    steps:
+      - intent: landuselandcover250k1
+      - action: utter_land_250k1
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicgeo1
+    steps:
+      - intent: geomorphology1
+      - action: utter_geomorphology1
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland_visual1
+    steps:
+      - intent: landuselandcover_visualisation1
+      - action: utter_land_visualization1
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicfloods1
+    steps:
+      - intent: flood1
+      - action: utter_hazards1
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicwasteland1
+    steps:
+      - intent: land_wasteland1
+      - action: utter_wasteland1
+      - action: action_speak
+
+  - story: user asks about Bhuvan thematicland_waterbodies1
+    steps:
+      - intent: Waterbodies1
+      - action: utter_waterbodies1
+      - action: action_speak
+
+  - story: User triggers web automation1
+    steps:
+      - intent: greet1
+      - action: utter_greet1
+      - intent: perform_web_automation
+      - action: action_perform_web_automation

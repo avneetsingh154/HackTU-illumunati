@@ -1,0 +1,560 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: provide_url_bhuvan
+    examples: |
+      - Can you give me more information about Bhuvan?
+      - Tell me about Bhuvan portal.
+      - What is Bhuvan?
+      - Provide details on Bhuvan.
+
+  - intent: provide_url_housing
+    examples: |
+      - Give me information about housing for all.
+      - What is the Housing for All initiative?
+      - Tell me more about housing schemes.
+
+  - intent: provide_url_forum
+    examples: |
+      - How can I access the Bhuvan forum?
+      - Tell me about discussions on Bhuvan forum.
+      - Bhuvan community forum details.
+      - Access Bhuvan discussions.
+
+  - intent: provide_url_aadhaar
+    examples: |
+      - What is the Bhuvan Aadhaar service?
+      - Can you provide details on Bhuvan Aadhaar?
+      - Tell me about Aadhaar on Bhuvan.
+
+  - intent: provide_url_aadhaar_hindi
+    examples: |
+      - Bhuvan Aadhaar सेवा क्या है?
+      - क्या आप Bhuvan Aadhaar पर विवरण प्रदान कर सकते हैं?
+      - Bhuvan पर Aadhaar के बारे में बताएं।
+
+  - intent: provide_url_apshcl
+    examples: |
+      - What is Bhuvan apshcl?
+      - Can you provide details about Bhuvan apshcl?
+      - Tell me about apshcl on Bhuvan?
+      - mujhe bhuvan apschl ke baare mein pata krna hai?
+
+  - intent: provide_url_ntr
+    examples: |
+      - What is Bhuvan ntr?
+      - Can you provide details about Bhuvan ntr?
+      - Tell me about Bhuvan ntr?
+      - mujhe Bhuvan NTR ke bare mein jannna hai
+
+  - intent: provide_url_forum
+    examples: |
+      - What is Bhuvan forum?
+      - Can you provide details about Bhuvan forum?
+      - Are there any specific categories in the Bhuvan forum?
+      - Can you guide me on accessing Bhuvan forum  discussions?
+      - app mujhe bhuvan forum ka link dedo?
+
+  - intent: provide_url_geonetwork
+    examples: |
+      - What is Bhuvan Geonetwork?
+      - Tell me about Bhuvan Geonetwork?
+      - Share the link to Bhuvan's platform for geospatial information.
+      - How do I navigate to Bhuvan GeoNetwork online?
+      - Bhuvan geonetwork par navigate krna hai
+
+  - intent: provide_url_planner
+    examples: |
+      - What is the link to Bhuvan's planner tool?
+      - Can you share the URL for Bhuvan planning application?
+      - Where do I go online to access Bhuvan's planning features?
+      - How do I navigate to Bhuvan's planner service?
+
+  - intent: provide_url_globe
+    examples: |
+      - How can I navigate to Bhuvan's globe service?
+      - Share the web link for Bhuvan's 3D globe application.
+      - Provide details on using Bhuvan's globe tool. Where can I find it?
+      - Can you provide the URL for Bhuvan's globe visualization?
+
+  - intent: provide_url_mhrd_rusa
+    examples: |
+      - What is the web link for Bhuvan's MHRD RUSA section?
+      - How do I access Bhuvan's MHRD RUSA platform?
+      - How can I navigate to Bhuvan's MHRD RUSA section?
+      - Where can I find more information about Bhuvan's MHRD RUSA?
+
+  - intent: provide_url_geographicalindication
+    examples: |
+      - What is the Bhuvan web link for Geographical Indication information?
+      - How do I access Bhuvan's Geographical Indication platform?
+      - Where can I go online to explore Bhuvan's Geographical Indication features?
+      - Provide details on using Bhuvan's Geographical Indication service.
+
+  - intent: provide_url_flycatchers
+    examples: |
+      - Can you share the link to Bhuvan's flycatchers section?
+      - Share the web link for Bhuvan's flycatchers platform.
+      - How can I navigate to Bhuvan's flycatchers section?
+      - Where can I go online to explore Bhuvan's flycatchers features?
+
+  - intent: provide_url_mhrd_ncert
+    examples: |
+      - What is the link to Bhuvan's MHRD NCERT section?
+      - Tell me more about Bhuvan's MHRD NCERT initiative.
+      - What is the URL for Bhuvan's MHRD NCERT information and resources?
+      - How can I navigate to Bhuvan's MHRD NCERT section?
+
+  - intent: provide_url_nabard
+    examples: |
+      - What is the URL for Bhuvan's NABARD information? 
+      - Can you share the link to Bhuvan's NABARD section?
+      - How can I navigate to Bhuvan's NABARD section?
+      - Where can I find more information about Bhuvan's NABARD?
+
+  - intent: provide_url_iwmp
+    examples: |
+      - How do I access Bhuvan's IWMP resources?
+      - Provide details on using Bhuvan's IWMP service.
+      - How can I navigate to Bhuvan's IWMP section?
+      - Where can I go online to explore Bhuvan's IWMP features?
+
+  - intent: landuselandcover
+    examples: |
+      - can you provide me with Land Use Land Cover?
+      - show me Land use land cover?
+      - tell me about land use land cover?
+      - what is the current state of Land Use Land Cover?
+      - aap mujhe land use cover ke baare mein bta dijiye
+
+  - intent: scale
+    examples: |
+      - my scale is 50K
+      - i want 50K
+      - 50k
+
+  - intent: scale_2
+    examples: |
+      - my scale is 250K
+      - i want 250K
+      - 250k
+
+  - intent: time1
+    examples: |
+      - i want of 2005 to 2006
+      - 2005
+      - 2006
+
+  - intent: time2
+    examples: |
+      - i want of 2011 to 2012
+      - 2011
+      - 2012
+
+  - intent: time3
+    examples: |
+      - i want of 2015 to 2016
+      - 2015
+      - 2016
+
+  - intent: landuselandcover_hindi
+    examples: |
+      - kya aap mujhe land use land cover ke baare mein btaa skte hai?
+      - mujhe land use land cover ke baare mein janna hai ?
+
+  - intent: landuselandcover56
+    examples: |
+      - can you provide me with Land Use Land Cover of year 2005-06?
+      - show me Land use land cover of year 2005-2006?
+      - tell me about land use land cover 2005-2006?
+      - i want 2005-2006 land use land cover
+      - mere liye land 2005-2006 land use love cover khol do
+
+  - intent: landuselandcover_hindi56
+    examples: |
+      - kya aap mujhe land use land cover ke baare mein btaa skte hai 2005-2006 ke?
+      - mujhe land use land cover ke baare mein janna hai 2005 to 2006 ke ?
+  
+  - intent: landuselandcover1112
+    examples: |
+      - can you provide me with Land Use Land Cover of year 2011 to 12?
+      - show me Land use land cover of year 2011 to 2012?
+      - tell me about land use land cover 2011 to 2012?
+      - i want 2011-2012 land use land cover
+
+  - intent: landuselandcover_hindi1112
+    examples: |
+      - kya aap mujhe land use land cover ke baare mein btaa skte hai 2011 to 2012 ke?
+      - mujhe land use land cover ke baare mein janna hai 2011 to 2012 ke ?
+
+  - intent: landuselandcover1516
+    examples: |
+      - can you provide me with Land Use Land Cover of year 2015 to 16?
+      - show me Land use land cover of year 2015 to 2016?
+      - tell me about land use land cover 2015-2016?
+      - i want 2015-2016 land use land cover
+
+  - intent: landuselandcover_hindi1516
+    examples: |
+      - kya aap mujhe land use land cover ke baare mein btaa skte hai 2015-2016 ke?
+      - mujhe land use land cover ke baare mein janna hai 2015- 2016 ke ?
+
+  - intent: landuselandcover_visualisation
+    examples: |
+      - can you show me the visuolisation of landuse land cover.
+      - aap mujhe landcover visuolisation dikha skte ho
+  - intent: urban
+    examples: |
+      - Please guide me about urban land use.
+      -tell me about urban land use
+
+  - intent: Land_degargation56
+    examples: |
+      - Please guide me about 2005-2006 land degardation.
+       -tell me about 2005-2006 land degardation.
+      - tell me about 2025-2016 land degardation
+       - Please guide me about 2015-2016 land degardation.
+
+  - intent: Land_wastelands
+    examples: |
+      - Please guide me about 50k wasteland.
+       -tell me about 50k wasteland.
+      - tell me about waste land.
+
+  - intent: Waterbodies
+    examples: |
+      - Please guide me about 250k waterbodies.
+      - tell me about 250k waterbodies.
+
+  - intent: geomorphology
+    examples: |
+      - Please guide me about 50k geomorphology.
+      - tell me about 50k geomorphology.
+
+  - intent: lineament
+    examples: |
+      - Please guide me about 50k lineament.
+      - tell me about 50k lineament.
+
+  - intent: flood
+    examples: |
+      - Please guide me about flood hazards.
+      - tell me about flood hazards.
+
+  - intent: flood_annual
+    examples: |
+      - Please guide me about flood annual layers.
+      - tell me about annuaul flood
+
+  - intent: perform_web_automation
+    examples: |
+      - open addhar centers near Chandigarh
+      - how many addhar centers are there near chandigarh
+
+  - intent: greet1
+    examples: |
+      - नमस्ते
+      - हैलो
+      - हाय
+      - हेलो थेर
+      - गुड मॉर्निंग
+      - गुड इवनिंग
+      - मोइन
+      - हे थेर
+      - लेट्स गो
+      - हे ड्यूड
+      - गुडमॉर्निंग
+      - गुडीवनिंग
+      - गुड आफ्टरनून
+
+  - intent: goodbye1
+    examples: |
+      - देखा जाएगा
+      - गुड बाय
+      - सी यू लेटर
+      - गुड नाइट
+      - बाय
+      - गुडबाय
+      - हेव ए नाइस डे
+      - सी यू अराउंड
+      - बाय बाय
+      - सी यू लेटर
+
+  - intent: affirm1
+    examples: |
+      - हाँ
+      - वाह
+      - बिल्कुल
+      - बिल्कुल सही
+      - वह सुनता है अच्छा
+      - सही
+
+  - intent: deny1
+    examples: |
+      - नहीं
+      - न
+      - कभी नहीं
+      - मुझे ऐसा नहीं लगता
+      - मुझे ऐसा पसंद नहीं
+      - नहीं वे
+      - नहीं बिल्कुल
+
+  - intent: mood_great1
+    examples: |
+      - परफेक्ट
+      - बहुत अच्छा
+      - अद्भुत
+      - एक राजा की तरह महसूस कर रहा हूँ
+      - बहुत अच्छा
+      - मैं बहुत अच्छा महसूस कर रहा हूँ
+      - मैं महान हूँ
+      - मैं अद्भुत हूँ
+      - मैं दुनिया को बचाने का विचार कर रहा हूँ
+      - सुपर स्टोक्ड
+      - एक्सट्रीमली गुड
+      - इतना अच्छा
+      - इतना परफेक्ट
+      - इतना अच्छा
+
+  - intent: mood_unhappy1
+    examples: |
+      - मेरा दिन बहुत हॉरिबल था
+      - मैं उदास हूँ
+      - मैं बहुत अच्छा महसूस नहीं कर रहा
+      - मैं निराश हूँ
+      - सुपर उदास
+      - मैं इतना उदास हूँ
+      - उदास
+      - बहुत उदास
+      - अच्छा नहीं
+      - बहुत अच्छा नहीं
+      - एक्सट्रीमली उदास
+      - इतना साड़ा
+      - इतना उदास
+
+  - intent: bot_challenge1
+    examples: |
+      - क्या आप एक बॉट हैं?
+      - क्या आप एक मानव हैं?
+      - क्या मैं एक बॉट से बात कर रहा हूँ?
+      - क्या मैं एक मानव से बात कर रहा हूँ?
+
+  - intent: provide_url_bhuvan1
+    examples: |
+      - क्या आप मुझे Bhuvan Portal के बारे में और जानकारी दे सकते हैं?
+      - Bhuvan Portal के बारे में मुझे और जानकारी दो।
+      - Bhuvan Portal क्या है?
+      - Bhuvan Portal पर विवरण प्रदान करें।
+
+  - intent: provide_url_housing1
+    examples: |
+      - मुझे Housing for All के बारे में जानकारी दो।
+      - Housing for All योजना क्या है?
+      - Housing for All स्कीम्स के बारे में मुझे बताओ।
+
+  - intent: provide_url_forum1
+    examples: |
+      - मैं Bhuvan forum कैसे एक्सेस कर सकता हूँ?
+      - मुझे Bhuvan forum के बारे में बताएं।
+      - Bhuvan forum पर चर्चाओं के बारे में बताएं।
+      - Bhuvan forum  तक पहुँचने के लिए मुझे मार्गदर्शन करें।
+
+  - intent: provide_url_aadhaar1
+    examples: |
+      - Aadhaar सेवा क्या है?
+      - क्या आप Aadhaar के बारे में विवरण प्रदान कर सकते हैं?
+      - Aadhaar पर भुवन के बारे में बताएं।
+
+      
+  - intent: landuselandcover_hindi11121
+    examples: |
+      - क्या आप मुझे लैंड यूज़ लैंड कवर के बारे में बता सकते हैं 2011 से 2012 के?
+      - मुझे लैंड यूज़ लैंड कवर के बारे में जानना है 2011 से 2012 के ?
+
+  - intent: landuselandcover15161
+    examples: |
+      - क्या आप मुझे 2015 से 16 के वर्ष के लैंड यूज़ लैंड कवर के साथ प्रदान कर सकते हैं?
+      - मुझे 2015 से 2016 के वर्ष के लैंड यूज़ लैंड कवर दिखा सकते हैं?
+      - मुझे 2015-2016 के लैंड यूज़ लैंड कवर के बारे में बता सकते हैं?
+      - मैं 2015-2016 के लैंड यूज़ लैंड कवर चाहता हूँ
+
+  - intent: landuselandcover_hindi15161
+    examples: |
+      - क्या आप मुझे लैंड यूज़ लैंड कवर के बारे में बता सकते हैं 2015-2016 के?
+      - मुझे लैंड यूज़ लैंड कवर के बारे में जानना है 2015- 2016 के ?
+
+  - intent: landuselandcover_visualisation1
+    examples: |
+      - क्या आप मुझे लैंडयूज लैंड कवर का दृश्यीकरण दिखा सकते हैं?
+      - आप मुझे लैंडकवर विजुअलाइजेशन दिखा सकते हैं
+  - intent: urban1
+    examples: |
+      - कृपया मुझे शहरी भूमि उपयोग के बारे में मार्गदर्शन करें।
+      - मुझे शहरी भूमि उपयोग के बारे में बताओ
+
+  - intent: Land_degargation561
+    examples: |
+      - कृपया मुझे 2005-2006 लैंड डीगार्डेशन के बारे में मार्गदर्शन करें।
+       -मुझे 2005-2006 लैंड डीगार्डेशन के बारे में बताओ।
+      - 2025-2016 लैंड डीगार्डेशन के बारे में मुझे बताओ
+      - कृपया मुझे 2015-2016 लैंड डीगार्डेशन के बारे में मार्गदर्शन करें।
+
+  - intent: Land_wastelands1
+    examples: |
+      - कृपया मुझे 50K अवशेषभूमि के बारे में मार्गदर्शन करें।
+      -मुझे 50K अवशेषभूमि के बारे में बताओ।
+      - कृपया मुझे वेस्ट लैंड के बारे में बताएं।
+      - कृपया मुझे 50k वेस्ट लैंड के बारे में बताएं।
+
+  - intent: Waterbodies1
+    examples: |
+      - कृपया मुझे 250K वॉटरबॉडीज के बारे में मार्गदर्शन करें।
+      - मुझे 250K वॉटरबॉडीज के बारे में बताओ।
+
+  - intent: geomorphology1
+    examples: |
+      - कृपया मुझे 50K भूरूपविज्ञान के बारे में मार्गदर्शन करें। 
+      - मुझे 50K जियोमॉर्फॉलॉजी के बारे में बताओ।
+      - मुझे जियोमॉर्फॉलॉजी के बारे में बताओ।
+
+
+  - intent: lineament1
+    examples: |
+      - कृपया मुझे 50K रेखामार्ग के बारे में मार्गदर्शन करें।
+      - मुझे 50K लाइनामेंट के बारे में बताओ।
+
+  - intent: flood1
+    examples: |
+      - कृपया मुझे बाढ़ के खतरों के बारे में मार्गदर्शन करें।
+      - मुझे बाढ़ के खतरों के बारे में बताओ।
+
+  - intent: flood_annual1
+    examples: |
+      - कृपया मुझे वार्षिक बाढ़ के बारे में मार्गदर्शन करें।
+      - मुझे वार्षिक बाढ़ के बारे में बताओ
+
+  - intent: perform_web_automation1
+    examples: |
+      - चंडीगढ़ के पास आधार केंद्र खोलो
+      - चंडीगढ़ के पास कितने आधार केंद्र हैं
+
+  - intent: time11
+    examples: |
+      - मुझे 2005 से 2006 का चाहिए
+      - 2005
+      - 2006
+
+  - intent: time21
+    examples: |
+      - मुझे 2011 से 2012 का चाहिए
+      - 2011
+      - 2012
+
+  - intent: time31
+    examples: |
+      - मुझे 2015 से 2016 का चाहिए
+      - 2015
+      - 2016
+
+  - intent: scale
+    examples: |
+      - मेरी स्केल 50K है
+      - मुझे 50K चाहिए
+      - 50K
+
+  - intent: scale_2
+    examples: |
+      - मेरी स्केल 250K है
+      - मुझे 250K चाहिए
+      - 250K
+
+  

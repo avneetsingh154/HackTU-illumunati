@@ -1,0 +1,33 @@
+.back {
+  background-image: url(backimg-modified.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.a1 {
+  width: 70%;
+  height: 80px;
+  background-color: black;
+  margin-top: 5%;
+  margin-left: 14%;
+  border: 3px solid rgba(207, 252, 6, 0.8);
+  border-radius: 10%;
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+  font-size: x-large;
+}
+.a2 {
+  margin-top: 3%;
+  height: 80px;
+  background-color: black;
+  border: 3px solid rgba(207, 252, 6, 0.8);
+  border-radius: 10%;
+  width: 80%;
+  margin-left: 10%;
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+  font-size: x-large;
+}

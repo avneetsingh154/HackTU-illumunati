@@ -1,0 +1,230 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - provide_url_bhuvan
+  - provide_url_housing
+  - provide_url_forum
+  - provide_url_aadhaar
+  - provide_url_data
+  - provide_url_apshcl
+  - provide_url_ntr
+  - provide_url_geonetwork
+  - provide_url_planner
+  - provide_url_globe
+  - provide_url_mhrd_rusa
+  - provide_url_geographicalindication
+  - provide_url_flycatchers
+  - provide_url_mhrd_ncert
+  - provide_url_nabard
+  - provide_url_iwmp
+  - landuselandcover
+  - landuselandcover250k
+  - landuselandcover_hindi
+  - landuselandcover56
+  - landuselandcover_hindi56
+  - landuselandcover1112
+  - landuselandcover_hindi1112
+  - landuselandcover1516
+  - landuselandcover_hindi1516
+  - landuselandcover_visualisation
+  - urban
+  - land_degargation56
+  - land_wasteland
+  - Waterbodies
+  - geomorphology
+  - lineament
+  - flood
+  - flood_annaul
+  - scale
+  - scale_2
+  - time1
+  - time2
+  - time3
+  - perform_web_automation
+  - greet1
+  - goodbye1
+  - affirm1
+  - deny1
+  - mood_great1
+  - mood_unhappy1
+  - bot_challenge1
+  - provide_url_bhuvan1
+  - provide_url_housing1
+  - provide_url_forum1
+  - provide_url_aadhaar1
+  - provide_url_data1
+  - provide_url_apshcl1
+  - provide_url_ntr1
+  - provide_url_geonetwork1
+  - provide_url_planner1
+  - provide_url_globe1
+  - provide_url_mhrd_rusa1
+  - provide_url_geographicalindication1
+  - provide_url_flycatchers1
+  - provide_url_mhrd_ncert1
+  - provide_url_nabard1
+  - provide_url_iwmp1
+  - landuselandcover1
+  - landuselandcover250k1
+  - landuselandcover_hindi1
+  - landuselandcover561
+  - landuselandcover_hindi561
+  - landuselandcover11121
+  - landuselandcover_hindi11121
+  - landuselandcover15161
+  - landuselandcover_hindi15161
+  - landuselandcover_visualisation1
+  - urban1
+  - land_degargation561
+  - land_wasteland1
+  - Waterbodies1
+  - geomorphology1
+  - lineament1
+  - flood1
+  - flood_annaul1
+  - scale1
+  - scale_21
+  - time11
+  - time21
+  - time31
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_land_scale:
+    - text: "Yes, sure. Please provide me with the scale as there are two scales 1:50000 and 1:25000."
+
+  utter_land_50000:
+    - text: "Please provide me with the year too."
+
+  utter_land_250k:
+    - text: "If you want the scale to be 250k, we have data from 2004 to 2023. I have attached a link to it further where you can navigate through Metadata, Statistics of each year as mentioned. Click on this link to navigate through it 'https://bhuvan-ras2.nrsc.gov.in/cgi-bin/LULC250K.exe'"
+
+  utter_land_56:
+    - text: "If you want the scale to be 50k and the year to be 2005-2006, we can provide you with Metadata, Analysis, Statistics. I have attached a link to it further where you can navigate through Metadata, Statistics, Analysis of this year as mentioned. Click on this link to navigate through it 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_land_1112:
+    - text: "If you want the scale to be 50k and the year to be 2011-2012, we can provide you with Metadata, Analysis, Statistics. I have attached a link to it further where you can navigate through Metadata, Statistics, Analysis of this year as mentioned. Click on this link to navigate through it WMTS: 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/servic'"
+
+  utter_land_1516:
+    - text: "If you want the scale to be 50k and the year to be 2015-2016, we can provide you with Metadata, Analysis, Statistics. I have attached a link to it further where you can navigate through Metadata, Statistics, Analysis of this year as mentioned. Click on this link to navigate through it WMTS: 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_land_visualization:
+    - text: "If you want land visualization of 14 states from the year 2018 to 2023 of scale 1:10000. Click on the given link to see it 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_land_visualization_district:
+    - text: "If you want land visualization of 43 districts from the year 2018 to 2023 of scale 1:10000. Click on the given link to see it 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/sisdpv2/gwc/service/wmts'"
+
+  utter_urban_land:
+    - text: "If you want to know about the urban land, we can provide you with metadata of 2006-2007. Click on this website to see it 'https://bhuvan-vec1.nrsc.gov.in/bhuvan/nuis/gwc/service/wmts'"
+
+  utter_land_degradation:
+    - text: "If you want to know about the land degradation 50k, we can provide you with Metadata and Static of 2005-2006 and 2015-2016. Click on this website to see it 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_wasteland:
+    - text: "If you want 50k data of the wasteland, we have two datasets from 2008-2009 and 2015-2016 where you can explore Statistics, Analysis, Query Shell, and Metadata. Click on the link given to know more about it 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_waterbodies:
+    - text: "If you want 250k data of the waterbodies, we have datasets of Indian Himalayas in it and here you can explore Metadata. Click on the link given to know more about it 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_geomorphology:
+    - text: "If you want 50k data of the geomorphology, we have datasets from 2005 to 2006 in it and here you can explore Metadata. Click on the link given to know more about it 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_hazards:
+    - text: "If you want 50k data of the hazards related to flood, here you can explore Metadata. Click on the link given to know more about it 'https://bhuvan-ras2.nrsc.gov.in/cgi-bin/hazard.exe'"
+
+  utter_greet1:
+    - text: "नमस्ते! आप कैसे हैं?"
+
+  utter_cheer_up1:
+    - text: "यहाँ कुछ है जो आपको खुश कर सकता है:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help1:
+    - text: "क्या यह आपकी मदद की?"
+
+  utter_happy1:
+    - text: "बहुत अच्छा, जारी रखें!"
+
+  utter_goodbye1:
+    - text: "अलविदा"
+
+  utter_iamabot1:
+    - text: "मैं एक बॉट हूँ, जो Rasa द्वारा संचालित है."
+
+  utter_land_scale1:
+    - text: "हाँ, बिल्कुल। कृपया मुझे स्केल प्रदान करें क्योंकि दो स्केल हैं 1:50000 और 1:25000।"
+
+  utter_land_500001:
+    - text: "कृपया वर्ष भी प्रदान करें।"
+
+  utter_land_250k1:
+    - text: "यदि आप 250k स्केल चाहते हैं, तो हमारे पास 2004 से 2023 तक का डेटा है। मैंने इसे आगे का एक लिंक जोड़ा है, जिसके माध्यम से आप मेटाडेटा, प्रतिष्ठान, वार्षिकीय विश्लेषण कर सकते हैं। इसे देखने के लिए इस लिंक पर क्लिक करें 'https://bhuvan-ras2.nrsc.gov.in/cgi-bin/LULC250K.exe'"
+
+  utter_land_561:
+    - text: "यदि आप 50k स्केल और वर्ष 2005-2006 चाहते हैं, तो हम इस वर्ष के मेटाडेटा, विश्लेषण, और सांख्यिकी के साथ प्रदान कर सकते हैं। मैंने इसे आगे का एक लिंक जोड़ा है, जिसके माध्यम से आप मेटाडेटा, सांख्यिकी, विश्लेषण का अन्वेषण कर सकते हैं। इसे देखने के लिए इस लिंक पर क्लिक करें 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_land_11121:
+    - text: "यदि आप 50k स्केल और वर्ष 2011-2012 चाहते हैं, तो हम इस वर्ष के मेटाडेटा, विश्लेषण, और सांख्यिकी के साथ प्रदान कर सकते हैं। मैंने इसे आगे का एक लिंक जोड़ा है, जिसके माध्यम से आप मेटाडेटा, सांख्यिकी, विश्लेषण का अन्वेषण कर सकते हैं। इसे देखने के लिए इस लिंक पर क्लिक करें 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/servic'"
+
+  utter_land_15161:
+    - text: "यदि आप 50k स्केल और वर्ष 2015-2016 चाहते हैं, तो हम इस वर्ष के मेटाडेटा, विश्लेषण, और सांख्यिकी के साथ प्रदान कर सकते हैं। मैंने इसे आगे का एक लिंक जोड़ा है, जिसके माध्यम से आप मेटाडेटा, सांख्यिकी, विश्लेषण का अन्वेषण कर सकते हैं। इसे देखने के लिए इस लिंक पर क्लिक करें 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_land_visualization1:
+    - text: "यदि आप 2018 से 2023 तक की 1:10000 स्केल की 14 राज्यों की भूमि दृश्यीकरण चाहते हैं, तो इसे देखने के लिए दिए गए लिंक पर क्लिक करें 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_land_visualization_district1:
+    - text: "यदि आप 2018 से 2023 तक की 1:10000 स्केल की 43 जिलों की भूमि दृश्यीकरण चाहते हैं, तो इसे देखने के लिए दिए गए लिंक पर क्लिक करें 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/sisdpv2/gwc/service/wmts'"
+
+  utter_urban_land1:
+    - text: "यदि आप शहरी भूमि के बारे में जानना चाहते हैं, तो हम 2006-2007 के मेटाडेटा प्रदान कर सकते हैं। इसे देखने के लिए इस वेबसाइट पर क्लिक करें 'https://bhuvan-vec1.nrsc.gov.in/bhuvan/nuis/gwc/service/wmts'"
+
+  utter_land_degradation1:
+    - text: "यदि आप 50k की भूमि की दुर्बलता के बारे में जानना चाहते हैं, तो हम 2005-2006 और 2015-2016 के मेटाडेटा और स्थिरता प्रदान कर सकते हैं। इसे देखने के लिए इस वेबसाइट पर क्लिक करें 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_wasteland1:
+    - text: "यदि आप 50k डेटा की वेस्टलैंड के बारे में जानना चाहते हैं, तो हमें 2008-2009 और 2015-2016 के दो डेटासेट्स हैं जहां आप सांख्यिकी, विश्लेषण, क्वेरी शैल, और मेटाडेटा का अन्वेषण कर सकते हैं। इसके बारे में और अधिक जानने के लिए दिए गए लिंक पर क्लिक करें 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_waterbodies1:
+    - text: "यदि आप 250k डेटा की जलस्रोतों के बारे में जानना चाहते हैं, तो हमें भारतीय हिमालय के डेटासेट्स हैं जिसमें आप मेटाडेटा का अन्वेषण कर सकते हैं। इसके बारे में और अधिक जानने के लिए दिए गए लिंक पर क्लिक करें 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_geomorphology1:
+    - text: "यदि आप 50k डेटा की भूरूपी विज्ञान के बारे में जानना चाहते हैं, तो हमें 2005 से 2006 तक के डेटासेट्स हैं जिसमें आप मेटाडेटा का अन्वेषण कर सकते हैं। इसके बारे में और अधिक जानने के लिए दिए गए लिंक पर क्लिक करें 'https://bhuvan-vec2.nrsc.gov.in/bhuvan/gwc/service/wmts'"
+
+  utter_hazards1:
+    - text: "यदि आप 50k डेटा की बाढ़ से संबंधित जोखिमों के बारे में जानना चाहते हैं, तो यहां आप मेटाडेटा का अन्वेषण कर सकते हैं। इसके बारे में और अधिक जानने के लिए दिए गए लिंक पर क्लिक करें 'https://bhuvan-ras'"
+
+
+actions:
+  - action_provide_info: {}
+  - action_store_urls: {}
+  - action_speak: {}
+  - action_perform_web_automation: {}
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
